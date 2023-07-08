@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head.ejs')%>
+
+<body>
+    <%- include('./partials/nav.ejs')%>
+    <h1>Random Quote Generator</h1>
+    <blockquote>
+        <%= quote.content %>
+            <% if (quote.author) { %>
+                <br> ~<%= quote.author %>
+                    <% } %>
+    </blockquote>
+</body>
+
+</html>

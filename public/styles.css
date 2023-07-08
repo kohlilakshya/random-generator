@@ -1,0 +1,34 @@
+/* Basic Styles */
+.navbar {
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  /* Hover and Active Styles */
+  .navbar a:hover {
+    color: red;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+  }
+  

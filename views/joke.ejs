@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head.ejs')%>
+<body>
+    <%- include('./partials/nav.ejs')%>
+    <h1>Random Joke Generator</h1>
+    <blockquote>
+        <%= joke.setup %>
+            <br>
+            <script>
+                function intervalFunction() {
+                    console.log("Interval action!");
+                    var element = document.getElementById("output");
+                    element.innerHTML += "<%= joke.punchline%> <br>";
+                }
+                setTimeout(intervalFunction, 2300);
+            </script>
+            <div id="output">
+            </div>
+    </blockquote>
+</body>
+
+</html>
